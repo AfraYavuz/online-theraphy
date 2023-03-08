@@ -10,7 +10,7 @@
 }
 
 .header-bg {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .header .navbar {
@@ -42,6 +42,21 @@
 .header .nav-item a:hover {
   padding-bottom: 12px;
   color: rgb(50, 36, 96);
+}
+
+.nav-button {
+  background-color: transparent;
+  border-radius: 25px;
+  border: 1px solid #322460;
+  color: #322460;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  padding: 10px 30px;
+  transition: 0.3s !important;
+}
+
+.mr-auto {
+  margin-left: auto !important;
 }
 
 .hamburger {

@@ -25,7 +25,7 @@ function Navbar() {
   return (
     <div className={color ? "header header-bg" : "header"}>
       <nav className="navbar">
-        <a href="/home" className="logo">
+        <a href="/" className="logo">
           <img src={logo} alt="logo" />
         </a>
         <div className="hamburger" onClick={handleClick}>
@@ -36,37 +36,38 @@ function Navbar() {
           )}
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
-          <li className="nav-item" style={{ marginLeft:50}}>
+          <li className="nav-item ">
             <a href="/aboutus" onClick={closeMenu}>
               About Us
             </a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item ">
             <a href="/psychologists" onClick={closeMenu}>
               Psychologists
             </a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item ">
             <a href="/tests" onClick={closeMenu}>
               Tests
             </a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item ">
             <a href="/faq" onClick={closeMenu}>
               F.A.Q.
             </a>
           </li>
-          <span className="nav-item" style={{ marginLeft:500}}>
-            <a href="/login" onClick={closeMenu}>
-              Log In
-            </a>
-          </span>
-          <span className="nav-item">
-            <a href="/signin" onClick={closeMenu}>
-              Sign In
-            </a>
-          </span>
         </ul>
+
+        <span className="nav-item mr-auto text-center">
+          <a href="/login" className="nav-link nav-button" onClick={closeMenu}>
+            Log In
+          </a>
+        </span>
+        <span className="nav-item  text-center">
+          <a href="/signin" className="nav-link nav-button" onClick={closeMenu}>
+            Sign In
+          </a>
+        </span>
       </nav>
     </div>
   );
